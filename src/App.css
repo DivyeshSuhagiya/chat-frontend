@@ -1,0 +1,43 @@
+.App{
+    background: linear-gradient(to right, #14151a, #1a1a36);
+    height: 100vh;
+    width: 100vw;
+}
+.add-btn{
+    background: linear-gradient(45deg, #8e36e0 0%, #164b92 100%);
+    width: 100%;
+    border: none !important;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+}
+.cancle-btn{
+    background-image: linear-gradient(to right, #525252 0%, #686868  51%, #8d8d8d  100%);
+    width: 100%;
+    border: none !important;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 20px;
+            
+     
+}         
+.btn-grad {
+   
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }

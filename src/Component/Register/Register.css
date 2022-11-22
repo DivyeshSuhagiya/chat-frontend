@@ -1,0 +1,30 @@
+.registerDiv{
+    width: 450px;
+    box-shadow: 0px 0px 30px 2px #0000009c;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(4px);
+    background-color: #14151a;
+    padding: 40px 0px;
+}
+.input{
+    width: 100%;
+    /* border: 1px solid lightgray; */
+    border: none !important;
+    padding: 10px 10px !important;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: #27282b;
+    color: white;
+}
+.input:focus{
+    outline: none;
+}
+label{
+    display: block;
+    margin: 6px 0;
+    color: white;
+}

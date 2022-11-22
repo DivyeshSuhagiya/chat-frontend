@@ -1,0 +1,220 @@
+
+.ChatPage{
+    width: 100%;
+    height: 100vh;
+    /* min-width: 1300px; */
+    box-shadow: 0px 0px 10px 0px lightgray;
+    margin: auto;
+    /* margin: 40px auto; */
+    overflow: hidden;
+    background: linear-gradient(to right, #14151a, #1a1a36);
+    padding: 0px 20px;
+}
+.userHeader{
+    /* background-color: #8e36e0; */
+    width: 100%;
+    /* height: 8%; */
+    position: relative;
+    background: linear-gradient(to right, #BD3F32 , #CB356B 90%); 
+    /* border-bottom: 1px solid rgba(211, 211, 211, 0.349); */
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+}
+.userHeader input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+}
+.userHeader input:focus{
+    outline: none;
+    outline: 1px solid rgba(0, 0, 0, 0.582);
+}
+.userImage{
+    width: 45px;
+    height: 45px;
+    /* background-color: red; */
+    background-image: url('../../assets/img/user.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.sidebarMain{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.sidebar{
+    /* border-right: 1px solid lightgray; */
+    height: 90vh;
+    width: 100%;
+    border-radius: 15px;
+    /* background-color: #14151a; */
+    box-shadow: 0px 0px 3px 0px lightgray;
+}
+.chatSection{
+    height: 100vh;
+}
+.chatHeader{
+    border-bottom: 1px solid rgba(211, 211, 211, 0.349);
+    width: 100%;
+    height: 8%;
+    /* background: linear-gradient(45deg, #8e36e0 0%, #164b92 100%); */
+    /* background: linear-gradient(to right, #14151a, #1a1a36); */
+    color: white;
+    
+}
+.options{
+    width: 150px;
+    /* height: 200px; */
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    top: 40%;
+    display: none;
+    z-index: 100;
+    color: black;
+}
+.option-icon:hover + .options{
+    display: block;
+}
+.options:hover{
+    display: block;
+}
+.options h5{
+    font-size: 18px;
+}
+.options h5:hover{
+    color:  #CB356B;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.sidebarUser{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.404);
+    color: white;
+}
+.sidebarUser .lastMsg{
+    color: rgb(230, 230, 230);
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.chatInputBox{
+    display: flex;
+}
+.chatInputBox input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(122, 122, 122);
+    margin-top: 8px;
+    margin-left: 10px;
+    border-radius: 30px;
+    resize: none;
+    /* font-size: 18px; */
+    padding: 10px;
+    background-color: #14151a;
+    color: white;
+}
+.chatInputBox input:focus{
+    outline: none;
+}
+/* .chatInputBox input::-webkit-scrollbar {
+    display: none;
+} */
+.chatInputBox  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 20px;
+    background: linear-gradient(to right, #BD3F32, #CB356B); 
+}
+.chatInputBox{
+    height: 8%;
+    /* background: linear-gradient(to right, #14151a, #1a1a36); */
+}
+
+.chatDataDiv{
+    /* width: 105%; */
+    /* height: 83vh; */
+    height: 84%;
+    padding: 15px 2px;
+    overflow-y: scroll
+}
+.chatDataDiv::-webkit-scrollbar {
+    display: none !important;
+}
+
+.sentMessage{
+    width: fit-content;
+    max-width: 400px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: 40px;
+}
+.sentMessage p {
+    padding: 10px;
+    background: linear-gradient(45deg, #8e36e0 0%, #164b92 100%);
+    color: white;
+    border-radius: 15px 15px 2px 15px;
+}
+.sentMessage h6 , .ReceivedMessage h6 {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+.sentMessage span , .ReceivedMessage span {
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(189, 189, 189, 0.849);
+}
+.ReceivedMessage{
+    width: fit-content;
+    max-width: 400px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.ReceivedMessage p {
+    padding: 10px;
+    /* background-color: white; */
+    border-radius: 15px 15px 15px 2px;
+    color: white;
+    background: linear-gradient(to right, #BD3F32, #CB356B); 
+
+}
+
+.activeClass{
+    background-color: #a53c63b4;
+    border-bottom: 1px solid black;
+}
+
+
+.dot-3{
+    width: 150px;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    top: 50%;
+    right:90%;
+    display: none;
+    z-index: 100;
+    color: black;
+}
+.dot-3-icon:hover + .dot-3{
+    display: block;
+}
+.dot-3:hover{
+    display: block;
+}
+
+.dot-3 h5{
+    font-size: 18px;
+}
+.dot-3 h5:hover{
+    color:  #CB356B;
+}
