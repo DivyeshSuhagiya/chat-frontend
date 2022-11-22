@@ -1,7 +1,9 @@
+
 .App{
     background: linear-gradient(to right, #14151a, #1a1a36);
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh; */
+    width: 100%;
+    min-height: 100vh;
 }
 .add-btn{
     background: linear-gradient(45deg, #8e36e0 0%, #164b92 100%);
@@ -41,3 +43,9 @@
    color: #fff;
    text-decoration: none;
  }
+
+ @media only screen and (max-width: 600px) {
+ .App{
+  height: 60vh !important;
+ }
+}

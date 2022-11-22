@@ -19,8 +19,17 @@ const Register = () => {
   }
   return (
     <>
-        <div className='regitserPage'>
-            <div className='registerDiv p-4 py-5'>
+        <div className='registerPage'>
+        
+            
+
+        <div className='row align-items-evenly justify-content-center ' style={{minHeight:'100vh'}}>
+        <div className='col-12 d-flex align-items-center justify-content-center p-3'>
+              <img src="/chat.png" alt="" height='60px' />
+              <h2 className='ms-3'>PinCHAT</h2>
+          </div>
+          <div className='col-12'>
+          <div className='registerDiv p-4 py-5 m-auto'>
                 <h3 className='mb-4 text-white'>Regitster</h3>
                 <input type="text" name='userName' value={value.userName} className='input' placeholder='User name' onChange={getOnchangevalue} />
                 <input type="email" name='email' value={value.email} className='input' placeholder='Email address' onChange={getOnchangevalue} />
@@ -37,7 +46,10 @@ const Register = () => {
                 </div>
                 <div className='mt-2 text-muted'>I have an <Link to='/'>Account</Link></div>
             </div>
+          </div>
         </div>
+        </div>
+
     </>
   )
 }

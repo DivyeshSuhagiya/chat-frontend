@@ -105,6 +105,7 @@
 
 .chatInputBox{
     display: flex;
+    align-items: center;
 }
 .chatInputBox input{
     width: 100%;
@@ -218,3 +219,43 @@
 .dot-3 h5:hover{
     color:  #CB356B;
 }
+
+@media only screen and (max-width: 600px) {
+    .ChatPage {
+      padding: 0 !important;
+    }
+    .sidebarMain , .sidebar{
+        margin: 0 !important;
+        height: 100vh !important;
+        border-radius: 0px;
+    }
+    .userHeader{
+        border-radius: 0px;
+    }
+    .sentMessage p {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .ReceivedMessage p {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .sentMessage {
+        margin-right: 0px;
+    }
+    .chatInputBox  button {
+        width: 50px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        /* margin-left: 20px; */
+        background: linear-gradient(to right, #BD3F32, #CB356B); 
+    }
+  }
+
+  @media only screen and (max-height: 800px) {
+    .chatDataDiv{
+        height: 77% !important;
+    }
+    
+  }

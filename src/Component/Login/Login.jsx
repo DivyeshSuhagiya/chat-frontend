@@ -28,7 +28,17 @@ const Login = () => {
   return (
     <>
         <div className='loginPage'>
-            <div className='loginDiv px-4 py-5'>
+          
+            
+        
+
+        <div className='row d-flex align-items-evenly justify-content-center' style={{minHeight:'100vh'}}>
+          <div className='col-12 d-flex align-items-center justify-content-center'>
+              <img src="/chat.png" alt="" height='60px' />
+              <h2 className='ms-3'>PinCHAT</h2>
+          </div>
+          <div className='col-12'>
+            <div className='loginDiv px-4 py-5 m-auto'>
                 <h3 className='mb-4 text-white'>Login</h3>
                 <input type="email" name='email' value={value.email} className='input' placeholder='Email address' onChange={getOnchangevalue} />
                 <input type="password" name='password' value={value.password} className='input' placeholder='Password' onChange={getOnchangevalue} />
@@ -39,7 +49,11 @@ const Login = () => {
                 </div>
                 <div className='mt-2 text-muted'><Link to='/register'>Register</Link> for this app</div>
             </div>
+          </div>
+
         </div>
+        </div>
+
     </>
   )
 }

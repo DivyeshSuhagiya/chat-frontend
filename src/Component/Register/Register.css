@@ -1,11 +1,22 @@
+.registerPage{
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+}
+.registerPage h2{
+    background: linear-gradient(to right, #db68db , #9d34da 90%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
 .registerDiv{
     width: 450px;
     box-shadow: 0px 0px 30px 2px #0000009c;
     border-radius: 20px;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
     backdrop-filter: blur(4px);
     background-color: #14151a;
     padding: 40px 0px;
@@ -28,3 +39,9 @@ label{
     margin: 6px 0;
     color: white;
 }
+
+@media only screen and (max-width: 470px) {
+    .registerDiv {
+      width: 90%;
+    }
+  }
