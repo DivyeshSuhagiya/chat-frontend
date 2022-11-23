@@ -71,9 +71,11 @@
     background-color: white;
     border-radius: 5px;
     top: 40%;
+    right: 10px;
     display: none;
     z-index: 100;
     color: black;
+    border: 1px solid rgb(97, 97, 97);
 }
 .option-icon:hover + .options{
     display: block;
