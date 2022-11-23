@@ -46,7 +46,8 @@ const Login = () => {
                 <div>
                   <button className='add-btn mt-5' onClick={() => saveData()}>Login</button>
                   <button className='cancle-btn mt-4'>cancle</button>
-                </div>
+                </div> 
+                {/*  */}
                 <div className='mt-2 text-muted'><Link to='/register'>Register</Link> for this app</div>
             </div>
           </div>
